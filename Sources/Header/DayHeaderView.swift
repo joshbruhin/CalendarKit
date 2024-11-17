@@ -1,6 +1,6 @@
 import UIKit
 
-public final class DayHeaderView: UIView, DaySelectorDelegate, DayViewStateUpdating, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+public class DayHeaderView: UIView, DaySelectorDelegate, DayViewStateUpdating, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     public private(set) var daysInWeek = 7
     public let calendar: Calendar
 
