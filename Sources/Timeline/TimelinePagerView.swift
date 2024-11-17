@@ -207,7 +207,7 @@ public final class TimelinePagerView: UIView, UIGestureRecognizerDelegate, UIScr
     }
 
     /// Event view with editing mode active. Can be either edited or newly created event
-    var editedEventView: EventView?
+    public var editedEventView: EventView?
     /// The `EventDescriptor` that is being edited. It's editable copy is used by the `editedEventView`
     private var editedEvent: EventDescriptor?
 
