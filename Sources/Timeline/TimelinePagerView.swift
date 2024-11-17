@@ -32,7 +32,7 @@ public final class TimelinePagerView: UIView, UIGestureRecognizerDelegate, UIScr
         return offset ?? CGPoint()
     }
 
-    private var currentTimeline: TimelineContainerController? {
+    var currentTimeline: TimelineContainerController? {
         pagingViewController.viewControllers?.first as? TimelineContainerController
     }
 
@@ -207,7 +207,7 @@ public final class TimelinePagerView: UIView, UIGestureRecognizerDelegate, UIScr
     }
 
     /// Event view with editing mode active. Can be either edited or newly created event
-    private var editedEventView: EventView?
+    var editedEventView: EventView?
     /// The `EventDescriptor` that is being edited. It's editable copy is used by the `editedEventView`
     private var editedEvent: EventDescriptor?
 
