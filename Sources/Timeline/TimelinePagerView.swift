@@ -32,13 +32,13 @@ public final class TimelinePagerView: UIView, UIGestureRecognizerDelegate, UIScr
         return offset ?? CGPoint()
     }
 
-    var currentTimeline: TimelineContainerController? {
+    public var currentTimeline: TimelineContainerController? {
         pagingViewController.viewControllers?.first as? TimelineContainerController
     }
 
     public var autoScrollToFirstEvent = false
 
-    var pagingViewController = UIPageViewController(transitionStyle: .scroll,
+    public var pagingViewController = UIPageViewController(transitionStyle: .scroll,
                                                             navigationOrientation: .horizontal,
                                                             options: nil)
     private var style = TimelineStyle()
